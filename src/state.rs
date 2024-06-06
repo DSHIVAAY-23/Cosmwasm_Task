@@ -8,12 +8,12 @@ pub struct InsurancePolicy {
     pub policy_id: String,
     pub insured_amount: u128,
     pub premium: u128,
-    pub premium_frequency: String, // New field
-    pub policy_term: String, // New field
-    pub riders: Vec<String>, // New field
+    pub premium_frequency: String, 
+    pub policy_term: String, 
+    pub riders: Vec<String>, 
     pub owner: Addr,
     pub claimed: bool,
-    pub condition: String,  // Condition as a string
+    pub condition: String,  
 }
 
 pub const INSURANCE_POLICIES: Map<&str, InsurancePolicy> = Map::new("insurance_policies");

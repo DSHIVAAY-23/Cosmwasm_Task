@@ -34,10 +34,10 @@ pub struct PolicyMetadata {
     pub policy_id: String,
     pub insured_amount: u128,
     pub premium: u128,
-    pub premium_frequency: String, // New field
-    pub policy_term: String, // New field
-    pub condition: String,  // Condition as a string
-    pub riders: Vec<String>, // New field
+    pub premium_frequency: String, 
+    pub policy_term: String, 
+    pub condition: String,  
+    pub riders: Vec<String>, 
 }
 
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
